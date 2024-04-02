@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "crushapp/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "crushapp/wsgi.py"
+      }
+    ]
+}
